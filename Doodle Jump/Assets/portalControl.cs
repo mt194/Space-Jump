@@ -7,9 +7,7 @@ public class portalControl : MonoBehaviour
     public LevelGenerator currentLevel;
     public GameObject sp;
     public GameObject ep;
-    
-	void start() {
-		//creating space between last component
+    void start() {
 		float lw = currentLevel.levelWidth;
 		currentLevel.spawnPosition.y += Random.Range(currentLevel.minY, currentLevel.maxY);
 		currentLevel.spawnPosition.x = Random.Range(-lw, lw);
