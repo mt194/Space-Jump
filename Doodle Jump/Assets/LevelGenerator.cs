@@ -12,6 +12,11 @@ public class LevelGenerator : MonoBehaviour {
     public float minY = .2f;
     public float maxY = 1.5f;
     public Vector3 spawnPosition = new Vector3();
+    public GameOverMenu GameOverMenu;
+    bool gameHasEnded = false;
+    public void GameOver(){
+        GameOverMenu.Setup(numberOfPlatforms);
+    }
 
     // Use this for initialization
     void Start() {
