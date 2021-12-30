@@ -309,7 +309,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307164325}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08, y: 0.18, z: 0}
+  m_LocalPosition: {x: 0.16, y: 0.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -720,7 +720,7 @@ PrefabInstance:
     - target: {fileID: 1227892052544102963, guid: f220add4c55f9124c9ba57cb147e8531,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.0359726
+      value: 3.77
       objectReference: {fileID: 0}
     - target: {fileID: 1227892052544102963, guid: f220add4c55f9124c9ba57cb147e8531,
         type: 3}
@@ -772,20 +772,40 @@ PrefabInstance:
       propertyPath: currentLevel
       value: 
       objectReference: {fileID: 1547923883}
+<<<<<<< HEAD
     - target: {fileID: 5876794321790466525, guid: f220add4c55f9124c9ba57cb147e8531,
         type: 3}
       propertyPath: m_Color.b
       value: 1
+=======
+    - target: {fileID: 5876794321790466524, guid: f220add4c55f9124c9ba57cb147e8531,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876794321790466524, guid: f220add4c55f9124c9ba57cb147e8531,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.29
+>>>>>>> main
       objectReference: {fileID: 0}
     - target: {fileID: 5876794321790466525, guid: f220add4c55f9124c9ba57cb147e8531,
         type: 3}
       propertyPath: m_Color.g
+<<<<<<< HEAD
       value: 1
+=======
+      value: 0.52156866
+>>>>>>> main
       objectReference: {fileID: 0}
     - target: {fileID: 5876794321790466525, guid: f220add4c55f9124c9ba57cb147e8531,
         type: 3}
       propertyPath: m_Color.r
+<<<<<<< HEAD
       value: 1
+=======
+      value: 0
+>>>>>>> main
       objectReference: {fileID: 0}
     - target: {fileID: 7262473163616104791, guid: f220add4c55f9124c9ba57cb147e8531,
         type: 3}
