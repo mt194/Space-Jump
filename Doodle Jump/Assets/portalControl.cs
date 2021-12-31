@@ -9,24 +9,17 @@ public class portalControl : MonoBehaviour
     public GameObject ep;
     void start() {
 		float lw = currentLevel.levelWidth;
-		currentLevel.spawnPosition.y += Random.Range(currentLevel.minY, currentLevel.maxY);
-		currentLevel.spawnPosition.x = Random.Range(-lw, lw);
-
 		//Creating Start Portal
 		Instantiate(sp, currentLevel.spawnPosition, Quaternion.identity);
-		currentLevel.spawnPosition.y += Random.Range(currentLevel.minY, currentLevel.maxY);
-		currentLevel.spawnPosition.x = Random.Range(-lw, lw);
-		sp.transform.position = currentLevel.spawnPosition;
+		sp.transform.position = currentLevel.spawnPosition = currentLevel.getNewDistance(currentLevel.spawnPosition, currentLevel);
 
-		//Platform between 2 portals
+		//Platform between 2 portals           platform can have any position but the endportal should be falling distance
+		currentLevel.spawnPosition.y = Random.Range(2f, 5f);
+		currentLevel.spawnPosition.x = Random.Range(-lw, lw);
 		Instantiate(currentLevel.platformPrefab, currentLevel.spawnPosition, Quaternion.identity);
 
-
 		//Creating End Portal
-		float distanceY = Random.Range(2f, 5f);
-		currentLevel.spawnPosition.y += distanceY;
-		currentLevel.spawnPosition.x = Random.Range(-lw, lw);
-		ep.transform.position = currentLevel.spawnPosition;
+		ep.transform.position = currentLevel.spawnPosition = currentLevel.getNewDistance(currentLevel.spawnPosition, currentLevel); ;
 	}
 
 }

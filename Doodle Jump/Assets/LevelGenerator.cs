@@ -38,7 +38,7 @@ public class LevelGenerator : MonoBehaviour {
     }
     
 
-    static Vector3 getNewDistance(Vector3 old, LevelGenerator lg) {
+    public Vector3 getNewDistance(Vector3 old, LevelGenerator lg) {
         newPosition.y = float.MaxValue;
         while (!reachableDistance(old, newPosition)) {
             newPosition.y = old.y + Random.Range(lg.minY, lg.maxY);
